@@ -31,3 +31,12 @@ let Calculator = {
 } 
 
 
+let actionApplyer = function(start, arr) {
+	let s = start 
+	for(let i = 0; i < arr.length; i++ ){
+		s = arr[i](s)
+	}
+	return s
+}
+
+
